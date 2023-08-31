@@ -17,6 +17,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class STLViewer implements GLEventListener {
+	
 	private final JFrame frame;
 	private final GLCanvas canvas;
 	private LinkedList<Float> vertices;
@@ -102,6 +103,7 @@ public class STLViewer implements GLEventListener {
 		vertices = newlist;
 	}
 	
+	//angle that changes for animation purposes
 	float angle = 0;
 	@Override
 	public void display(GLAutoDrawable drawable) {

@@ -13,6 +13,7 @@ public class Main {
 
         JButton pickButton = new JButton("Pick a File");
 
+        //button on click
         pickButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fileChooser = new JFileChooser();
@@ -21,6 +22,7 @@ public class Main {
                     File selectedFile = fileChooser.getSelectedFile();
                     String filePath = selectedFile.getAbsolutePath();
                     frame.dispose();
+                    //start stl viewer
                     new STLViewer("STL Viewer", filePath);
                 }
             }
