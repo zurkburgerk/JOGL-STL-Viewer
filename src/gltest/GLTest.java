@@ -22,9 +22,9 @@ public class GLTest implements GLEventListener {
 	private final GLCanvas canvas;
 	private LinkedList<Float> vertices;
 	
-	public GLTest(String title) {
+	public GLTest(String title, String filePath) {
 		
-		vertices = scanFile("C:\\Users\\jrathum\\eclipse-workspace\\gltest\\src\\Iron_Throne_Benchy.stl");
+		vertices = scanFile(filePath);
 		scaleVertices(1);
 		
         GLProfile gp = GLProfile.get(GLProfile.GL2);
