@@ -59,7 +59,7 @@ public class STLViewer implements GLEventListener {
 	    	Scanner sc = new Scanner(file);
 	    	while (sc.hasNextLine()) {
 	    		String line = sc.nextLine().trim();
-	    		if (line.startsWith("outer loop")) {
+	    		if (line.startsWith("o")) {
 	    			for (int i = 0; i < 3; ++i) {
 	    				line = sc.nextLine().trim();
 		    			String[] split = line.split(" ");
