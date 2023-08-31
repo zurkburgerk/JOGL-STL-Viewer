@@ -16,13 +16,12 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class GLTest implements GLEventListener {
-	
+public class STLViewer implements GLEventListener {
 	private final JFrame frame;
 	private final GLCanvas canvas;
 	private LinkedList<Float> vertices;
 	
-	public GLTest(String title, String filePath) {
+	public STLViewer(String title, String filePath) {
 		
 		vertices = scanFile(filePath);
 		scaleVertices(1);

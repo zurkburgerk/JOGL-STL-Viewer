@@ -21,7 +21,7 @@ public class Main {
                     File selectedFile = fileChooser.getSelectedFile();
                     String filePath = selectedFile.getAbsolutePath();
                     frame.dispose();
-                    new GLTest("STL Viewer", filePath);
+                    new STLViewer("STL Viewer", filePath);
                 }
             }
         });
