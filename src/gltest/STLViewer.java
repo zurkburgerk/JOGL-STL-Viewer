@@ -82,7 +82,7 @@ public class STLViewer implements GLEventListener {
 	}
 	
 	/**
-	 * Scales all float values scanned from stl file to a number between -1 and 1.
+	 * Scales all float values scanned from ascii stl file to a number between -1 and 1.
 	 * @param scale number used to scale. 1 is exact size, less than 1 is bigger, greater than 1 is smaller.
 	 */
 	private void scaleVertices(float scale) {
@@ -125,7 +125,7 @@ public class STLViewer implements GLEventListener {
 	    }
 	    gl.glEnd();
 	    gl.glFlush(); 
-	      
+
 	    angle += 2f;  //assigning the angle  
 	}
 
