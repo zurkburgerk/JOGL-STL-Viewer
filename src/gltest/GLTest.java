@@ -39,6 +39,7 @@ public class GLTest implements GLEventListener {
         frame.add(canvas);
         frame.setSize(500, 500);
         frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
         
         final FPSAnimator animator = new FPSAnimator(canvas, 300, true); 
         animator.start(); 
