@@ -59,8 +59,6 @@ public class STLViewer implements GLEventListener {
 	    	Scanner sc = new Scanner(file);
 	    	while (sc.hasNextLine()) {
 	    		String line = sc.nextLine().trim();
-	    		if (line.startsWith("solid model")) continue;
-	    		if (line.startsWith("end loop")) continue;
 	    		if (line.startsWith("outer loop")) {
 	    			for (int i = 0; i < 3; ++i) {
 	    				line = sc.nextLine().trim();
