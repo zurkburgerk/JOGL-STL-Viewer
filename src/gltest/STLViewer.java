@@ -22,6 +22,11 @@ public class STLViewer implements GLEventListener {
 	private final GLCanvas canvas;
 	private LinkedList<Float> vertices;
 	
+	/**
+	 * Placeholder, currently runs all graphics.
+	 * @param title
+	 * @param filePath
+	 */
 	public STLViewer(String title, String filePath) {
 		
 		vertices = scanFile(filePath);
