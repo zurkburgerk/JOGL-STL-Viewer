@@ -22,6 +22,7 @@ public class Main {
                     File selectedFile = fileChooser.getSelectedFile();
                     String filePath = selectedFile.getAbsolutePath();
                     frame.dispose();
+                    
                     //start stl viewer
                     new STLViewer("STL Viewer", filePath);
                 }
